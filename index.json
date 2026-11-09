@@ -4,12 +4,41 @@
     {
       "id": "org.pixelvr.funscript",
       "name": "Funscript devices",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "description": "Plays the .funscript next to a video on devices connected to Intiface Central",
-      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.3.pvrplugin",
-      "sha256": "3760cb1c9ab550427ca7ce9858265c61d888ffd262ad3f1af244fbee90ed050e",
-      "size": 57958,
-      "minApp": "1.16.0"
+      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.4.pvrplugin",
+      "sha256": "a126b37c0796ae2b4b15b257f97722609d1b1b594bc7fc4f30049f0361eea38f",
+      "size": 57554,
+      "minApp": "1.16.0",
+      "summary": "Moves your toys in sync with the video, from a .funscript file",
+      "about": [
+        "Many videos come with a .funscript file: a script of movements timed to the video. This plugin plays it on devices connected to Intiface Central (strokers, vibrators, rotators), perfectly in sync with what you watch."
+      ],
+      "howto": [
+        "Install Intiface Central (intiface.com) on your PC or phone, start its server and connect your devices.",
+        "Turn this plugin on, then press \"Find Intiface on the network\" on its page.",
+        "Put the .funscript next to the video with the same name, e.g. Film.mp4 and Film.funscript.",
+        "Play the video. Devices pause while you scrub, pause or take the headset off."
+      ],
+      "changelog": {
+        "0.2.4": [
+          "The \"Script\" bar above the control panel is gone (it was for testing)."
+        ],
+        "0.2.3": [
+          "Broken script files can no longer send invalid values to devices."
+        ],
+        "0.2.2": [
+          "Explains when Intiface refuses because another app is connected to it."
+        ],
+        "0.2.1": [
+          "Finds Intiface on your network.",
+          "Resumes by itself after the connection to Intiface drops."
+        ],
+        "0.2.0": [
+          "Devices fade out while you scrub and glide back in afterwards.",
+          "New setting: While scrubbing - Stop or Keep running."
+        ]
+      }
     },
     {
       "id": "org.pixelvr.deovr-remote",
@@ -19,7 +48,25 @@
       "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.deovr-remote-0.1.2.pvrplugin",
       "sha256": "5dfa8779626114486642af770e918b88044437e376102408ec90fb2fa0afad7e",
       "size": 35470,
-      "minApp": "1.16.0"
+      "minApp": "1.16.0",
+      "summary": "Lets MultiFunPlayer, ScriptPlayer or XBVR follow your video",
+      "about": [
+        "Only needed if you already control your devices from MultiFunPlayer, ScriptPlayer, FunFlixDroid or XBVR on another device. Those apps then follow the video playing in Pixel VR Player, the same way they follow DeoVR."
+      ],
+      "howto": [
+        "Turn this plugin on. Its status line shows the address to enter, e.g. 192.168.1.20 port 23554.",
+        "In MultiFunPlayer add a \"DeoVR\" source with that address (ScriptPlayer / XBVR: the DeoVR option).",
+        "Play a video on the selected screen: the app shows it and plays its script.",
+        "Use either this or the Funscript devices plugin, not both: Intiface accepts only one app."
+      ],
+      "changelog": {
+        "0.1.2": [
+          "New name and description that explain what it is for."
+        ],
+        "0.1.1": [
+          "No more jump to 0:00 right after a video opens."
+        ]
+      }
     }
   ]
 }
