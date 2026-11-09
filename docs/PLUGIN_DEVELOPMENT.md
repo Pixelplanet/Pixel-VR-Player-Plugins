@@ -178,6 +178,11 @@ check what it answers, without the player.
 1. Put the source in a public repository with an open-source licence.
 2. Open a pull request here that adds `packages/<id>-<version>.pvrplugin` and an entry in
    `index.json` (`id`, `name`, `version`, `description`, `url` = the raw GitHub address of the
-   package, `sha256`, `size`, `minApp`).
+   package, `sha256`, `size`, `minApp`) and the texts users see:
+   - `summary`: one line on the Install plugins list
+   - `about`: what it does, in plain words (paragraphs)
+   - `howto`: what the user has to do to use it (short steps)
+   - `changelog`: `{"1.1.0": ["what changed", ...], ...}`, shown when the user updates
+   Keep `about` + `howto` short: the details page shows about 10 lines.
 3. After review it appears for every user under Settings > Plugins; a higher `version` shows as an
    update.
