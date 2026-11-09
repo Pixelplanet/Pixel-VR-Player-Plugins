@@ -4,11 +4,11 @@
     {
       "id": "org.pixelvr.funscript",
       "name": "Funscript devices",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "description": "Plays the .funscript next to a video on devices connected to Intiface Central",
-      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.2.pvrplugin",
-      "sha256": "8ac09cafbba026becb1dac656760b8c052c13a320989bbc82a9cb2dd36d03be5",
-      "size": 57921,
+      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.3.pvrplugin",
+      "sha256": "3760cb1c9ab550427ca7ce9858265c61d888ffd262ad3f1af244fbee90ed050e",
+      "size": 57958,
       "minApp": "1.16.0"
     },
     {

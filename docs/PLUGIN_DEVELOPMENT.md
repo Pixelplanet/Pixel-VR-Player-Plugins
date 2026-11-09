@@ -91,7 +91,8 @@ The working directory is the plugin folder.
   numbers).
 - `exec`: the program and its arguments; `exec[0]` is looked up in the plugin folder first, then in
   `PATH` (e.g. `["python3", "main.py"]`).
-- `sidecars`: patterns for `files.read`; `{base}` is the video's name without extension.
+- `sidecars`: patterns for `files.read`; `{base}` is the video's name without extension. Only ordinary files count: links
+  next to the video are never offered or read.
 - Settings appear on the plugin's page in this order. Values arrive in `hello` and `settings`:
   toggles as `true` / `false`, choices and segmented as the option index, text as a string. An
   `action` is a button; pressing it sends `action` with its key.
