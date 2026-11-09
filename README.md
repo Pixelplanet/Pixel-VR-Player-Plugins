@@ -26,8 +26,11 @@ Open an issue with the **Plugin request** template: what it should connect to an
 
 ## Writing a plugin
 
-Plugins are separate programs that talk to the player over stdin / stdout (JSON lines). The SDK, an
-example plugin and the packaging script are in the player repository (`plugins/`). To have a plugin
+Plugins are separate programs that talk to the player over stdin / stdout (JSON lines). Everything you
+need is in this repository: **[docs/PLUGIN_DEVELOPMENT.md](docs/PLUGIN_DEVELOPMENT.md)** (what plugins
+can and cannot do, the manifest, every message, permissions, testing), the C++ SDK in `dev/sdk/`, a
+complete example plugin in `dev/example/` (for developers only, not offered in the player) and the
+packaging script in `dev/tools/`. To have a plugin
 listed here, open a pull request that adds the package to `packages/` and an entry to `index.json`
 (id, name, version, description, url, sha256, size). Every plugin is reviewed before it is listed:
 plugins run as programs on the headset, so only reviewed, open-source plugins are accepted.
