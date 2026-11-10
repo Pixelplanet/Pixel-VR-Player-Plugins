@@ -4,23 +4,26 @@
     {
       "id": "org.pixelvr.funscript",
       "name": "Funscript devices",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "description": "Plays the .funscript next to a video on devices connected to Intiface Central",
-      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.4.pvrplugin",
-      "sha256": "a126b37c0796ae2b4b15b257f97722609d1b1b594bc7fc4f30049f0361eea38f",
-      "size": 57554,
+      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.5.pvrplugin",
+      "sha256": "9c138b24dafcb7f975d9e8f4cb1679f320d694edb05bb9fd31f0cef5d3ecc351",
+      "size": 57490,
       "minApp": "1.16.0",
       "summary": "Moves your toys in sync with the video, from a .funscript file",
       "about": [
-        "Many videos come with a .funscript file: a script of movements timed to the video. This plugin plays it on devices connected to Intiface Central (strokers, vibrators, rotators), perfectly in sync with what you watch."
+        "Many videos come with a **.funscript** file: a script of movements timed to the video. This plugin plays it on devices connected to **Intiface Central** (strokers, vibrators, rotators), in sync with what you watch - local files, network shares, **Plex** and **Jellyfin**."
       ],
       "howto": [
-        "Install Intiface Central (intiface.com) on your PC or phone, start its server and connect your devices.",
-        "Turn this plugin on, then press \"Find Intiface on the network\" on its page.",
-        "Put the .funscript next to the video with the same name, e.g. Film.mp4 and Film.funscript.",
+        "Install **Intiface Central** (intiface.com) on your PC or phone, start its server and connect your devices.",
+        "Turn this plugin on, then press **Find Intiface on the network** on its page.",
+        "Put the script next to the video with the same name (Film.mp4 + Film.funscript), or into the **Funscripts** folder in your home folder - that also works for Plex and Jellyfin.",
         "Play the video. Devices pause while you scrub, pause or take the headset off."
       ],
       "changelog": {
+        "0.2.5": [
+          "Scripts for **Plex** and **Jellyfin** videos: put them in the new **Funscripts** folder (in your home folder, subfolders work too), named like the video file or its title."
+        ],
         "0.2.4": [
           "The \"Script\" bar above the control panel is gone (it was for testing)."
         ],
@@ -51,7 +54,7 @@
       "minApp": "1.16.0",
       "summary": "Lets MultiFunPlayer, ScriptPlayer or XBVR follow your video",
       "about": [
-        "Only needed if you already control your devices from MultiFunPlayer, ScriptPlayer, FunFlixDroid or XBVR on another device. Those apps then follow the video playing in Pixel VR Player, the same way they follow DeoVR."
+        "Only needed if you already control your devices from **MultiFunPlayer**, **ScriptPlayer**, **FunFlixDroid** or **XBVR** on another device. Those apps then follow the video playing in Pixel VR Player, the same way they follow DeoVR."
       ],
       "howto": [
         "Turn this plugin on. Its status line shows the address to enter, e.g. 192.168.1.20 port 23554.",

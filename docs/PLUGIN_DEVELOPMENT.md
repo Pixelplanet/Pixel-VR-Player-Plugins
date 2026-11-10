@@ -183,6 +183,7 @@ check what it answers, without the player.
    - `about`: what it does, in plain words (paragraphs)
    - `howto`: what the user has to do to use it (short steps)
    - `changelog`: `{"1.1.0": ["what changed", ...], ...}`, shown when the user updates
-   Keep `about` + `howto` short: the details page shows about 10 lines.
+   Keep `about` + `howto` short: the details page shows about 14 lines. Formatting: `**bold**`;
+   `howto` steps are numbered and `changelog` lines get bullets automatically.
 3. After review it appears for every user under Settings > Plugins; a higher `version` shows as an
    update.
