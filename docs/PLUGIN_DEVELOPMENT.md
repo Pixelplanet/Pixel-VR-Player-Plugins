@@ -53,7 +53,9 @@ repository only lists reviewed, open-source plugins, and why the user sees each 
 | Log (stderr) | `~/.cache/pixelvr/plugins/<id>.log` |
 | Enabled state, setting values | `~/.config/pixelvr/plugins.json` (owned by the player) |
 
-Environment: `PIXELVR_PLUGIN_API=1`, `PIXELVR_PLUGIN_ID`, `PIXELVR_PLUGIN_DIR`, `PIXELVR_PLUGIN_DATA`.
+Environment: `PIXELVR_PLUGIN_API=1`, `PIXELVR_PLUGIN_ID`, `PIXELVR_PLUGIN_DIR`, `PIXELVR_PLUGIN_DATA`,
+`PIXELVR_APP_DIR` (the player's folder, e.g. `~/PixelVRPlayer`: put files the user should find, like
+the funscript plugin's `Funscripts` folder, in there - never directly in the home folder).
 The working directory is the plugin folder.
 
 1. The player starts enabled plugins and sends `hello`. **Answer `hello` within 5 seconds**, or the

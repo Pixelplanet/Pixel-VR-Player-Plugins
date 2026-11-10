@@ -4,11 +4,11 @@
     {
       "id": "org.pixelvr.funscript",
       "name": "Funscript devices",
-      "version": "0.2.6",
+      "version": "0.2.7",
       "description": "Plays the .funscript next to a video on devices connected to Intiface Central",
-      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.6.pvrplugin",
-      "sha256": "4f05558e5e71529d07e249e2394f944a5b822560205ae467daf38551432a673f",
-      "size": 59068,
+      "url": "https://raw.githubusercontent.com/Pixelplanet/Pixel-VR-Player-Plugins/main/packages/org.pixelvr.funscript-0.2.7.pvrplugin",
+      "sha256": "1ef171a7d3a8b89c44493902c8d5006a1d1729e9e0628ad88e710d01948549d5",
+      "size": 59601,
       "minApp": "1.16.0",
       "summary": "Moves your toys in sync with the video, from a .funscript file",
       "about": [
@@ -17,12 +17,12 @@
       "howto": [
         "Install **Intiface Central** (intiface.com) on your PC or phone, start its server and connect your devices.",
         "Turn this plugin on, then press **Find Intiface on the network** on its page.",
-        "Put the script next to the video with the same name (Film.mp4 + Film.funscript), or into **.local/share/pixelvr/Funscripts** in your home folder - that also works for Plex and Jellyfin.",
+        "Put the script next to the video with the same name (Film.mp4 + Film.funscript), or into the **Funscripts** folder inside the **PixelVRPlayer** folder - that also works for Plex and Jellyfin.",
         "Play the video. Devices pause while you scrub, pause or take the headset off."
       ],
       "changelog": {
-        "0.2.6": [
-          "The Funscripts folder moved to **.local/share/pixelvr/Funscripts** in your home folder, so the home folder stays tidy. Scripts from the old folder are moved automatically."
+        "0.2.7": [
+          "Scripts now live in **PixelVRPlayer/Funscripts**, next to the player - easy to find. Scripts from earlier folders are moved there automatically."
         ],
         "0.2.5": [
           "Scripts for **Plex** and **Jellyfin** videos: put them in the new **Funscripts** folder (in your home folder, subfolders work too), named like the video file or its title."
